@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+
+<head>
+  <title>🎉🎂🥳 Ｈａｐｐｙ Ｂｉｒｔｈｄａｙ Ｓｈｒｅｙａ! 🎈🎁🎊</title>
+  <meta name="description" content="Happy Birthday Friend">
+</head>
+
+<body>
+
+  <!-- Ganti Audio di sini -->
+  <audio src="dewul2.mp3" id="linkmp3" class="sembunyi"></audio>
+
+  <div id="bodyblur">
+    <!-- Wallpaper -->
+    <img src="gbr/dew4.png" id="wallpaper" />
+    <div id="beneranblur"></div>
+  </div>
+
+  <div id='Content'>
+
+    <div id="kadoIn">
+      <!-- Tombol Surat -->
+      <img src="gbr/kado1.gif" />
+    </div>
+    <p id="ket">Click on the gift!</p>
+
+    <div class="kumpulanstiker">
+      <!-- Stiker untuk Konten -->
+      <img src="gbr/bunga1.gif" id="fotostiker" />
+      <img src="gbr/pusn.gif" id="fotostiker1" />
+      <img src="gbr/pandacoklat.gif" id="fotostiker2" />
+      <img src="gbr/cilukba.gif" id="fotostiker3" />
+      <img src="gbr/pandakuning1.gif" id="fotostiker4" />
+      <img src="gbr/pandakuning.gif" id="fotostiker5" />
+      <img src="gbr/pandacoklat.gif" id="fotostiker6" />
+    </div>
+
+    <p id="halo" class="halo"></p>
+
+    <div>
+      <blockquote id='bq' data-text='𝑭𝒓𝒐𝒎 𝑨𝒎𝒊𝒓'>
+        <p id="kalimat">I have something. 🤣🩵</p>
+
+        <p id="pesan1">Click 4 BALLOONS below!😆🤍</p>
+        <div id="kolombaru">
+          <li id="lv1">🎈</li>
+          <li id="lv2">🎈</li>
+          <li id="lv3">🎈</li>
+          <li id="lv4">🎈</li>
+        </div>
+
+        <p id="pesan2">Wait...</p>
+        <!-- Pesan -->
+        <p id="pesan3">Aww... Someone's having a birthday!🤣❤️</p>
+        <p id="pesan4">Happy Birthday, </p>
+        <p id="pesan5" class="gaya2">Just getting older, huh? Hehe.</p>
+        <p id="pesan6" class="gaya2">May your life be filled with joy and laughter, bringing happiness wherever you go! 😄💙</p>
+        <p id="pesan7" class="gaya2">Stay healthy always!</p>
+
+        <p id="pesan8" class="gaya2">Haha, just kidding! 😄</p>
+        <p id="pesan9" class="gaya2">On your special day, may you continue to grow into the best version of yourself. <br> May every aspect of your life flow effortlessly. <br> May you enjoy both physical and spiritual well-being. <br> Wishing you all the best 🥳❤️</p>
+        <p id="pesan10" class="gaya2"> <img src="gbr/happy-birthday-cookie-cake-ezgif.com-resize.gif" alt="Cake"></p>
+
+        <!-- Tombol Lanjut -->
+        <p id="opsL">Click to continue.</p>
+      </blockquote>
+    </div>
+
+    <!-- Tombol Kirim Pesan -->
+    <div id="Tombol"><a id="By">&#128140; Continue.</a></div>
+
+    <!-- Pesan Tambahan -->
+    <p id="katatambahan" class="sembunyi">Haha, okay, that's fine!😜... So waits 2-3 months for gift🤣🤣</p>
+
+    <!-- Pesan Ditolak -->
+    <div id="pesanditolak">
+      <img id="stikerditolak" src="gbr/weee.gif" />
+      <p id="kataditolak">Alright, if you don't want to. 😜🤍</p>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const swalst = Swal.mixin({
+      timer: 2300,
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      timerProgressBar: true,
+      imageHeight: 90,
+    });
+    audio = new Audio('' + linkmp3.src);
+    ftganti = 0;
+    fungsi = 0;
+    fungsiAwal = 0;
+    deffotostiker = fotostiker.src;
+
+    function berjatuhan() {
+      const heart = document.createElement("div");
+      heart.className = "fas fa-snowflake";
+      heart.style.left = (Math.random() * 90) + "vw";
+      heart.style.animationDuration = (Math.random() * 3) + 2 + "s";
+      body.appendChild(heart);
+    }
+    setInterval(function name(params) {
+      var heartArr = document.querySelectorAll(".fa-snowflake");
+      if (heartArr.length > 100) {
+        heartArr[0].remove()
+      }
+    }, 100);
+    Content.style = "opacity:1;margin-top:16vh";
+    const swals = Swal.mixin({
+      allowOutsideClick: false,
+      cancelButtonColor: '#FF0040',
+      imageHeight: 80,
+    });
+
+    document.getElementById("kadoIn").onclick = function () {
+      if (fungsiAwal == 0) {
+        audio.play();
+        fungsiAwal = 1;
+        kadoIn.style = "transition:all .8s ease;transform:scale(10);opacity:0";
+        wallpaper.style = "transform: scale(1.5);";
+        ket.style = "display:none";
+        setTimeout(initengahan, 300);
+        setTimeout(inipesan, 500)
+      }
+    }
+
+    async function inipesan() {
+      var {
+        value: nama
+      } = await swals.fire({
+        title: 'Enter your name.',
+        input: 'text',
+      });
+      if (nama && nama.length < 11) {
+        window.nama = nama;
+        vketikhalo = "Hello! " + nama + " ✨";
+        mulainama();
+      } else {
+        await swals.fire('Oops!', 'The name cannot be empty or more than 10 characters, okay!');
+        inipesan();
+      }
+    }
+
+    //Variable Pertanyaan Akhir
+    var tanya = 'Would you like a gift? 😶🎁';
+    var opstanya = 'Go ahead and answer😆';
+    var tompositif = 'Would you like one?';
+    var tomnegatif = 'Not really?';
+  </script>
+
+  <script src="script.js"></script>
+  <!-- Sampai Sini -->
+</body>
+</html>
